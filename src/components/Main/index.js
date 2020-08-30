@@ -27,20 +27,19 @@ const Main = () => {
     }
 
 
-    useEffect(() => {
-        // program data api call
-        setDataLoad(true);
-        axios
-            .get(`${API_BASE_URL}launches?limit=100&launch_success=${launchSuccess}&land_success=${landingSuccess}&launch_year=${launchDate}`)
-            .then(res => {
-                console.log(res, "ssssssssssssssssssssss");
-                setDataLoad(false);
-                setProgram(res.data);
-            }).catch(err => {
-                setDataLoad(false);
-                console.log(err);
-            })
-    }, [launchSuccess, landingSuccess, launchDate])
+    // useEffect(() => {
+    //     // program data api call
+    //     setDataLoad(true);
+    //     axios
+    //         .get(`${API_BASE_URL}launches?limit=100&launch_success=${launchSuccess}&land_success=${landingSuccess}&launch_year=${launchDate}`)
+    //         .then(res => {
+    //             setDataLoad(false);
+    //             setProgram(res.data);
+    //         }).catch(err => {
+    //             setDataLoad(false);
+    //             console.log(err);
+    //         })
+    // }, [launchSuccess, landingSuccess, launchDate])
 
 
     return (
