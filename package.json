@@ -28,7 +28,6 @@
     "postinstall": "npm run build"
   },
 
-  "proxy": "https://spacexprogramsapp.herokuapp.com/",
 
   "eslintConfig": {
     "extends": "react-app"
@@ -44,7 +43,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-    
   }
-  
 }
