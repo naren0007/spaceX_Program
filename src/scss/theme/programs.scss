@@ -10,6 +10,10 @@
 	.programItem {
 	  width: 100%;
 	  align-self: stretch;
+	  margin-bottom:15px;
+	  @include bp(md-min) {
+	   margin-bottom:0;
+	  }
 	  
 	  .itemInner{
 	  	padding:20px;
